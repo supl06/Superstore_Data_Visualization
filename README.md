@@ -40,8 +40,6 @@ The notebook conducts exploratory data analysis with a strong focus on visual in
 | weeknum             | Week number in the year                                  |
 
 
-> ⚠️ Note: The column `è®°å½•æ•°` may be an encoding error or placeholder; it should be renamed or removed if unnecessary.
-
 ## What We Got From This Project
 - Which regions and cities contribute the most to profit?
 - Which product categories have high sales but low profit?
