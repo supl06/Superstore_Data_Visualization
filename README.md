@@ -1,61 +1,67 @@
 # Superstore Sales Analysis: Data Visualization and Storytelling
 
 ## Introduction
-This project explores retail performance using the Superstore dataset. Through data visualization techniques in Python, the objective is to identify sales trends, uncover profit-driving segments, and highlight areas of concern such as high-discount low-profit products. The final outcome focuses on creating compelling visual narratives that deliver actionable business insights.
+This project explores sales and profitability insights using the Superstore dataset. Through Python-based data visualization techniques, the goal is to derive actionable business insights that can aid strategic decision-making for sales, marketing, and logistics teams. The project emphasizes visual storytelling — turning data into a clear business narrative.
 
 ## Technical
 **Language**: Python (filetype: `.ipynb`)  
 **Libraries**: Pandas, Matplotlib, Seaborn  
-**Dataset**: Superstore.csv (contains retail order data including sales, profit, discount, customer info, and product details)
+**Dataset**: Superstore.csv (contains sales and customer-level order information across different markets)
 
 ## Content
-The notebook performs descriptive analysis with visual storytelling techniques. It highlights patterns and outliers in:
-- Sales and Profit trends
-- Category and Sub-Category performance
-- Regional performance
-- Customer segmentation
-- Impact of discounting on profitability
+The notebook conducts exploratory data analysis with a strong focus on visual insights. It helps to:
+- Identify profitable and non-profitable product segments
+- Understand the effect of discounting on profit
+- Track sales patterns across cities, states, and years
+- Reveal trends in shipping and customer segments
 
 ## Data Fields
 
-### Key Variables:
-| Variable Name     | Description                                     |
-|-------------------|-------------------------------------------------|
-| Order ID          | Unique identifier for each order                |
-| Order Date        | Date the order was placed                       |
-| Ship Mode         | Shipping method used                            |
-| Customer ID       | Unique identifier for each customer             |
-| Segment           | Customer type (Consumer, Corporate, Home Office)|
-| Region            | Region of delivery (West, East, Central, South) |
-| Category          | Product category (Furniture, Office, Technology)|
-| Sub-Category      | Product sub-category                            |
-| Sales             | Revenue from the order                          |
-| Profit            | Profit from the order                           |
-| Discount          | Discount applied                                |
-| Quantity          | Number of units sold                            |
-| State             | U.S. state where the order was delivered        |
+| Variable Name       | Description                                              |
+|---------------------|----------------------------------------------------------|
+| Category            | Product category (e.g., Office Supplies, Technology)     |
+| Sub.Category        | Product sub-category (e.g., Paper, Binders)              |
+| Customer.ID         | Unique identifier for each customer                      |
+| Customer.Name       | Customer's full name                                     |
+| Country             | Country where the order was placed                       |
+| State               | State within the country                                 |
+| City                | City where the order was delivered                       |
+| Segment             | Customer segment (Consumer, Corporate, Home Office)      |
+| Order.ID            | Unique order identifier                                  |
+| Order.Date          | Date the order was placed                                |
+| Ship.Date           | Date the order was shipped                               |
+| Ship.Mode           | Shipping method (Standard, Second Class, etc.)           |
+| Discount            | Discount applied on the order                            |
+| Sales               | Sales amount                                              |
+| Shipping.Cost       | Shipping charges                                          |
+| Market              | Market label (e.g., US)                                   |
+| Market2             | Broader market (e.g., North America)                     |
+| Year                | Year of the order                                         |
+| weeknum             | Week number in the year                                  |
+
+
+> ⚠️ Note: The column `è®°å½•æ•°` may be an encoding error or placeholder; it should be renamed or removed if unnecessary.
 
 ## What We Got From This Project
-- Which categories and sub-categories are generating the most revenue and profit?
-- Are there regions consistently underperforming despite good sales?
-- How does discounting influence profit margins?
-- What are the seasonal or monthly sales trends?
-- Which customer segments are most valuable?
-- Which states or product lines need strategy changes?
+- Which regions and cities contribute the most to profit?
+- Which product categories have high sales but low profit?
+- What is the relationship between discounting and profitability?
+- How does customer segment behavior differ across years?
+- Are there seasonal or weekly trends in order volumes?
 
 ## Step Inside The Project
-- Load and explore the dataset
-- Clean and preprocess date and numeric fields
-- Visualize:
-  - Sales by Region and State
-  - Profit by Category and Sub-Category
-  - Sales trends over time
-  - Profitability vs Discount
-  - Segment-wise sales analysis
-- Draw insights and business implications
+- Load and inspect the dataset
+- Data cleaning (e.g., converting dates, handling unusual column names)
+- Visualizations:
+  - Sales and profit over time (yearly, weekly)
+  - Sales by state and city
+  - Discount vs profit scatter plots
+  - Segment and market-level comparisons
+- Insights extraction and business recommendations
 
 ## Conclusion
-- There is a clear **year-end sales peak**, likely due to holidays and seasonal promotions.
-- Over-discounting correlates with negative profit in many cases—requiring pricing strategy revision..
-- Visual storytelling helps identify these patterns quickly and supports strategic business decisions.
-
+- Certain cities and states contribute disproportionately to profit or loss.
+- High discounts often lead to reduced profits, especially in Office Supplies.
+- The Consumer segment drives the largest share of sales across all markets.
+- Visual storytelling reveals patterns like year-end order surges and unprofitable shipping modes.
+- Strategic actions can be taken to optimize product pricing and logistics based on market and segment behavior.
